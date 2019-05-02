@@ -1,0 +1,55 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	double length, width, typeOfFrame, choiceOfColorForFrame, crowns, size, color, price;
+
+	cout << "Please input the length of the picture to be framed in inches: ";
+	cin >> length;
+	cout << "Please input the width of the picture to be framed in inches: ";
+	cin >> width;
+
+	cout << endl;
+
+	size = length * width;
+
+	cout << "Length: " << length << endl;
+	cout << "Width: " << width << endl;
+	cout << "Size of frame: " << size << " square inches" << endl;
+
+	cout << endl;
+
+	cout << "There are two (2) types of frames which are available in this store:\n[1] Regular and\n[2] Fancy\n\n";
+	cout << "Please input the type of frame to be used by typing in its corresponding number: ";
+	cin >> typeOfFrame;
+
+	if (typeOfFrame = 1)
+		typeOfFrame = 0.15;
+	else if (typeOfFrame = 2)
+		typeOfFrame = 0.25;
+	else
+		cout << "You may only choose between regular and fancy frames (1 or 2).";
+
+	cout << endl;
+
+	cout << "Would you like to alter the color of the frame for your picture? [Y/N]\n";
+	cin >> color;
+
+
+	cout << endl;
+
+	cout << "How many crowns would you like your frame to have?\n";
+	cin >> crowns;
+
+	cout << "Oh no, hindi po natapos. :(\n";
+	cout << endl;
+
+
+
+	_getch();
+	return 0;
+
+}
